@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,7 +109,7 @@
     </div>
 </section>
 
-<!-- Download Section -->
+<!-- About Us Section -->
 <section class="content-section text-center">
     <div id="aboutUs" class="download-section">
         <div class="container">
@@ -119,7 +118,7 @@
 
                 <p>In 2012, HabitCracker started with one purpose that still drives us today...</p>
 
-                <p>We exist to set people free</p>
+                <p>We exist to set people free.</p>
 
                 <p>Too many people are held back from doing, feeling and being the best they can be. Controlled by
                     habits that rob their potential.</p>
@@ -132,7 +131,7 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="container content-section text-center">
+<section id="contact" class="container content-section text-center" ng-controller="ContactController as vm">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
             <h2>Sign Up</h2>
@@ -145,9 +144,9 @@
             </div>
             <form>
                 <div class="input-group">
-                    <input disabled type="email" class="form-control" placeholder="your email address"/>
+                    <input type="email" class="form-control" placeholder="your email address"/>
                       <span class="input-group-btn">
-                        <button disabled class="btn btn-default" type="button">Send</button>
+                        <button class="btn btn-default" type="button" ng-click="vm.save()">Send</button>
                       </span>
                 </div>
             </form>
@@ -163,17 +162,19 @@
 </footer>
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
+<script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="js/grayscale.js"></script>
 
-</body>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="app/app.module.js" ></script>
 
+</body>
 </html>
