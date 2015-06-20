@@ -12,6 +12,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+<!--
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+-->
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
@@ -28,45 +31,11 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <i class="fa fa-play-circle"></i> Home
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#about">What is HabitCracker?</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#aboutUs">Who we are</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Sign Up</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+<div ng-include="'app/common/navbar.html'"></div>
 
 <!-- Intro Header -->
 <header class="intro">
@@ -175,6 +144,5 @@
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="app/app.module.js" ></script>
-
 </body>
 </html>
