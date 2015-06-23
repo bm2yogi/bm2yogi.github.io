@@ -11,18 +11,14 @@
     <title>HabitCracker</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-<!--
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
--->
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
-          type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,8 +30,41 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <i class="fa fa-play-circle"></i> Home
+            </a>
+        </div>
 
-<div ng-include="'app/common/navbar.html'"></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">What is HabitCracker?</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#aboutUs">Who we are</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
 
 <!-- Intro Header -->
 <header class="intro">
@@ -95,30 +124,6 @@
                 <p>We are looking to change the lives of <strong>1000</strong> people to be healthy, debt-free and in
                     control of their lives.</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="container content-section text-center" ng-controller="ContactController as vm">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h2>Sign Up</h2>
-
-            <div class="alert alert-warning">
-                <p>Good news, although we've reached our limit for this current group of participants, we have <span>8</span> spots left for
-                    the next round of applicants.</p>
-
-                <p>To add your name to the list for the next round, please share your email address with us.</p>
-            </div>
-            <form>
-                <div class="input-group">
-                    <input type="email" class="form-control" placeholder="your email address"/>
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button" ng-click="vm.save()">Send</button>
-                      </span>
-                </div>
-            </form>
         </div>
     </div>
 </section>
