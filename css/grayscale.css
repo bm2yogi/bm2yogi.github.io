@@ -3,6 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
 
 body {
     width: 100%;
@@ -161,11 +162,20 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
+    text-transform: lowercase;
+    font-family: 'Josefin Sans';
     font-size: 40px;
 }
 
+.habit {
+    color: limegreen;
+}
+.cracker{
+    color: #d58512;
+}
+
 .intro .intro-body .intro-text {
-    color:#757575;
+    color:#FFF;
     font-size: 18px;
 }
 
